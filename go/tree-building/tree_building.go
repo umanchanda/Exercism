@@ -6,7 +6,7 @@ type Record struct {
 	Parent int
 }
 
-// Node is a struc that
+// Node is a struct that
 type Node struct {
 	ID       int
 	Children []*Node
@@ -14,5 +14,5 @@ type Node struct {
 
 // Build is a function that builds a tree
 func Build(records []Record) (*Node, error) {
-	return nil, nil
+	
 }
