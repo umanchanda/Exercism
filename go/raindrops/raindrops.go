@@ -15,7 +15,15 @@ func Convert(n int) string {
 			s = "Plang"
 		} else if f == 7 {
 			s = "Plong"
-		} else if {
+		} else if f == 15 {
+			s = "PlingPlang"
+		} else if f == 21 {
+			s = "PlingPlong"
+		} else if f == 35 {
+			s = "PlangPlong"
+		} else if f == 105 {
+			s = "PlingPlangPlong"
+		} else {
 			s += ""
 		}
 	}
@@ -23,10 +31,10 @@ func Convert(n int) string {
 }
 
 // Factors returns the factors ofa number
-func Factors (n int) []int {
+func Factors(n int) []int {
 	factors := []int{}
 	for i := 1; i <= n; i++ {
-		if n % i == 0 {
+		if n%i == 0 {
 			factors = append(factors, i)
 		}
 	}
