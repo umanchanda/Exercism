@@ -5,9 +5,9 @@ def find(search_list, value):
         mid = left + (right-left) // 2
         if search_list[mid] == value:
             return mid
-        elif search_list[mid] < value:
-            return find(search_list[left:mid-1], value)
+        elif search_list[mid] > value:
+            return find(search_list[left:mid], value)
         else:
-            return find(search_list[mid+1:right], value)
+            return mid + 1 + find(search_list[mid+1:right+1], value)
     else:
         raise ValueError("not found")
