@@ -1,2 +1,5 @@
 typescript/*/node_modules
 go/*/.exercism/
+python/*/.exercism
+python/*/__pycache__
+python/*/.pytest_cache
