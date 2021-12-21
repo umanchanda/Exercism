@@ -1,7 +1,7 @@
 import secrets
 
 def private_key(p):
-    if secrets.randbelow(p) > p:
+    if secrets.randbelow(p) > p or p < 1:
         raise Exception("private key must be less than p")
     else:
         return secrets.randbelow(p)
